@@ -1,0 +1,289 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  line-height: 1.4;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  font-family: DM sans-serif;
+}
+
+.outer-box {
+  width: 40%;
+  height: 87vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
+  border: 1px solid #bbbaba;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.outer-box .heading-box {
+  width: 100%;
+  height: 34vh;
+  background: linear-gradient(123.75deg, #f5821f 1.87%, #ff5c00 120.46%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #ffffff;
+  padding: 1rem 5rem;
+  font-weight: 700;
+  position: absolute;
+}
+
+.outer-box .heading-box h1 {
+  font-size: 1.9rem;
+}
+
+.outer-box .heading-box h2 {
+  font-size: 1.4rem;
+}
+
+.outer-box .heading-box p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.outer-box .question-box {
+  position: relative;
+  width: 90%;
+  height: 57vh;
+  left: 5%;
+  top: 25vh;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.outer-box .question-box .question-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 0 0 1.9rem;
+  color: #2d2d2d;
+}
+
+.outer-box .question-box .question-heading .question-icon {
+  margin-left: 0.8rem;
+  font-size: 0.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.outer-box .question-box .question-icon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  background: #f5831f26;
+  color: #ff5c00;
+}
+
+.outer-box .question-box .single-question-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 1.8rem;
+  border: 1px solid #e1e1e1;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.outer-box .question-box .single-question-box p {
+  font-size: 0.9rem;
+  color: #2d2d2d;
+}
+
+.outer-box .question-box .single-question-box .question-icon {
+  margin-right: 0.8rem;
+  font-size: 0.55rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.outer-box .question-box .single-question-box:hover {
+  border: 1px solid #36a0f7;
+}
+
+.outer-box .question-box .question-btn {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.outer-box .question-box .question-btn button {
+  padding: 1rem 2.5rem;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.outer-box .question-box .question-btn button .fas {
+  padding-right: 0.5rem;
+  color: #555555;
+}
+
+.outer-box .question-box .question-btn button:hover {
+  border: 1px solid #36a0f7;
+}
+
+.outer-box .bot-icon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 2rem;
+  top: 10.7rem;
+  left: 4rem;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7600), to(#ff5c00));
+  background: linear-gradient(180deg, #ff7600 0%, #ff5c00 100%);
+  border-radius: 5rem;
+}
+/*# sourceMappingURL=main.css.map */
