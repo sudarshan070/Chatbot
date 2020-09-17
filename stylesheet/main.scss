@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 50px;
+  padding: 1.5rem;
   line-height: 1.4;
   font-size: 16px;
   letter-spacing: 0.2px;
@@ -175,7 +175,11 @@ body {
   animation-fill-mode: backwards;
 }
 .bot-icon-animation {
-  animation: moveInBottom 1s ease-out 1.5s;
+  animation: moveInBottom 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards;
+}
+.bot-icon-animation1 {
+  animation: moveInBottom 0.5s ease-out 3s;
   animation-fill-mode: backwards;
 }
 .question-bg-animation {

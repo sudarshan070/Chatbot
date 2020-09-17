@@ -353,8 +353,15 @@ body {
 }
 
 .bot-icon-animation {
-  -webkit-animation: moveInBottom 1s ease-out 1.5s;
-          animation: moveInBottom 1s ease-out 1.5s;
+  -webkit-animation: moveInBottom 0.5s ease-out 1.5s;
+          animation: moveInBottom 0.5s ease-out 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.bot-icon-animation1 {
+  -webkit-animation: moveInBottom 1s ease-out 3s;
+          animation: moveInBottom 1s ease-out 3s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -461,7 +468,8 @@ body {
     font-size: 14px;
   }
   .refresh-btn {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
