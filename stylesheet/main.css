@@ -15,7 +15,7 @@ body {
 
 .outer-box {
   width: 40%;
-  height: 87vh;
+  height: 90vh;
   margin: 0 auto;
   border-radius: 20px;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
@@ -25,37 +25,58 @@ body {
   position: relative;
 }
 
-.outer-box .heading-box {
+.outer-box .heading-bg {
   width: 100%;
-  height: 34vh;
+  height: 45%;
   background: linear-gradient(123.75deg, #f5821f 1.87%, #ff5c00 120.46%);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  color: #ffffff;
-  padding: 1rem 5rem;
-  font-weight: 700;
   position: absolute;
 }
 
-.outer-box .heading-box h1 {
+.outer-box .heading-bg .heading-text-box {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.outer-box .heading-bg .heading-text-box h1 {
   font-size: 1.9rem;
 }
 
-.outer-box .heading-box h2 {
+.outer-box .heading-bg .heading-text-box h2 {
   font-size: 1.4rem;
 }
 
-.outer-box .heading-box p {
+.outer-box .heading-bg .heading-text-box p {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.outer-box .question-box {
-  position: relative;
+.outer-box .bot-icon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 2rem;
+  top: 12rem;
+  left: 4rem;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7600), to(#ff5c00));
+  background: linear-gradient(180deg, #ff7600 0%, #ff5c00 100%);
+  border-radius: 5rem;
+}
+
+.outer-box .question-bg {
+  position: absolute;
   width: 90%;
-  height: 57vh;
+  height: 65%;
   left: 5%;
-  top: 25vh;
+  top: 14rem;
   background: #fff;
   border-radius: 0.5rem;
   border: 1px solid #e4e4e4;
@@ -63,22 +84,24 @@ body {
           box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
-.outer-box .question-box .question-heading {
+.outer-box .question-bg .question-heading {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3rem 0 0 1.9rem;
   color: #2d2d2d;
 }
 
-.outer-box .question-box .question-heading .question-icon {
+.outer-box .question-bg .question-heading .question-icon {
   margin-left: 0.8rem;
   font-size: 0.7rem;
   width: 1.2rem;
   height: 1.2rem;
 }
 
-.outer-box .question-box .question-icon {
+.outer-box .question-bg .question-icon {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -87,41 +110,63 @@ body {
   color: #ff5c00;
 }
 
-.outer-box .question-box .single-question-box {
+.outer-box .question-bg .single-question-box {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
-  margin: 1rem 1.8rem;
   border: 1px solid #e1e1e1;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
 }
 
-.outer-box .question-box .single-question-box p {
+.outer-box .question-bg .single-question-box p {
   font-size: 0.9rem;
   color: #2d2d2d;
 }
 
-.outer-box .question-box .single-question-box .question-icon {
+.outer-box .question-bg .single-question-box .question-icon {
   margin-right: 0.8rem;
   font-size: 0.55rem;
   width: 1rem;
   height: 1rem;
 }
 
-.outer-box .question-box .single-question-box:hover {
-  border: 1px solid #36a0f7;
+.outer-box .question-bg .question1 {
+  position: absolute;
+  top: 6rem;
+  left: 5%;
 }
 
-.outer-box .question-box .question-btn {
-  text-align: center;
-  padding: 1rem 0;
+.outer-box .question-bg .question2 {
+  position: absolute;
+  top: 10.5rem;
+  left: 5%;
 }
 
-.outer-box .question-box .question-btn button {
-  padding: 1rem 2.5rem;
+.outer-box .question-bg .question3 {
+  position: absolute;
+  top: 15rem;
+  left: 5%;
+}
+
+.outer-box .question-bg .question4 {
+  position: absolute;
+  top: 19.5rem;
+  left: 5%;
+}
+
+.outer-box .question-bg .question-btn {
+  position: absolute;
+  top: 25rem;
+  width: 70%;
+  left: 20%;
+}
+
+.outer-box .question-bg .question-btn button {
+  padding: 0.9rem 2rem;
   background: #fff;
   border: 1px solid #d1d1d1;
   -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
@@ -131,28 +176,97 @@ body {
   font-weight: 500;
 }
 
-.outer-box .question-box .question-btn button .fas {
+.outer-box .question-bg .question-btn button .fas {
   padding-right: 0.5rem;
   color: #555555;
 }
 
-.outer-box .question-box .question-btn button:hover {
-  border: 1px solid #36a0f7;
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30);
+            transform: translateY(-30);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
-.outer-box .bot-icon {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-size: 2rem;
-  top: 10.7rem;
-  left: 4rem;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff7600), to(#ff5c00));
-  background: linear-gradient(180deg, #ff7600 0%, #ff5c00 100%);
-  border-radius: 5rem;
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30);
+            transform: translateY(-30);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.heading-bg-animation {
+  -webkit-animation: moveInBottom 2s ease-out 0.5s;
+          animation: moveInBottom 2s ease-out 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.heading-text-box-animation {
+  -webkit-animation: moveInBottom 1.5s ease-out 1.5s;
+          animation: moveInBottom 1.5s ease-out 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.bot-icon-animation {
+  -webkit-animation: moveInBottom 1s ease-out 1.5s;
+          animation: moveInBottom 1s ease-out 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.question-bg-animation {
+  -webkit-animation: moveInBottom 1s linear 2.5s;
+          animation: moveInBottom 1s linear 2.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.question1-animation {
+  -webkit-animation: moveInBottom 1s linear 3.5s;
+          animation: moveInBottom 1s linear 3.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.question2-animation {
+  -webkit-animation: moveInBottom 1s linear 4.5s;
+          animation: moveInBottom 1s linear 4.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.question3-animation {
+  -webkit-animation: moveInBottom 1s linear 5.5s;
+          animation: moveInBottom 1s linear 5.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.question4-animation {
+  -webkit-animation: moveInBottom 1s linear 6.5s;
+          animation: moveInBottom 1s linear 6.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.btn-animation {
+  -webkit-animation: moveInBottom 1s linear 7s;
+          animation: moveInBottom 1s linear 7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 /*# sourceMappingURL=main.css.map */
