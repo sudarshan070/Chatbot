@@ -401,6 +401,20 @@ body {
           animation-fill-mode: backwards;
 }
 
+.refresh-btn {
+  font-size: 18px;
+  background: #fff;
+  color: red;
+  border: 1px solid tomato;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.refresh-btn:hover {
+  background: rgba(255, 0, 0, 0.6);
+  color: #fff;
+}
+
 @media screen and (max-width: 760px) {
   body {
     padding: 0;
@@ -445,6 +459,9 @@ body {
   }
   .outer-box .question-bg .question-btn button {
     font-size: 14px;
+  }
+  .refresh-btn {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

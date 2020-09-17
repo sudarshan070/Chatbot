@@ -269,4 +269,18 @@ body {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+
+.refresh-btn {
+  font-size: 18px;
+  background: #fff;
+  color: red;
+  border: 1px solid tomato;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.refresh-btn:hover {
+  background: rgba(255, 0, 0, 0.6);
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
