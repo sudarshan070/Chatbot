@@ -137,7 +137,7 @@ table {
 }
 
 body {
-  padding: 50px;
+  padding: 1.5rem;
   line-height: 1.4;
   font-size: 16px;
   letter-spacing: 0.2px;
@@ -360,8 +360,8 @@ body {
 }
 
 .bot-icon-animation1 {
-  -webkit-animation: moveInBottom 1s ease-out 3s;
-          animation: moveInBottom 1s ease-out 3s;
+  -webkit-animation: moveInBottom 0.5s ease-out 3s;
+          animation: moveInBottom 0.5s ease-out 3s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
