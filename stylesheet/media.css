@@ -1,79 +1,47 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 760px) {
   body {
     padding: 0;
   }
   .outer-box {
-    width: 80%;
-    height: 100vh;
-  }
-  .outer-box .heading-box {
-    height: 278px;
-    position: absolute;
-    padding: 2.2rem 4rem;
-  }
-  .outer-box .bot-icon {
-    top: 165px;
-    left: 3rem;
-  }
-  .outer-box .question-box {
-    top: 199px;
-    height: auto;
-    width: 95%;
-    left: 2.5%;
-  }
-  .outer-box .question-box .question-heading {
-    font-size: 14px;
-  }
-  .outer-box .question-box .single-question-box {
-    margin: 1rem 1.5rem;
-    padding: 0.8rem 0.2rem;
-  }
-  .outer-box .question-box .single-question-box p {
-    font-size: 12px;
-  }
-  .outer-box .question-box .single-question-box .question-icon {
-    margin-right: 0.6rem;
-    font-size: 0.5rem;
-    width: 0.8rem;
-    height: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .outer-box {
     width: 100%;
     height: 100vh;
   }
-  .outer-box .heading-box {
-    height: 278px;
-    position: absolute;
-    padding: 2.2rem 0 2.2rem 4rem;
+  .outer-box .question-heading p {
+    font-size: 14px;
   }
-  .outer-box .bot-icon {
-    top: 165px;
-    left: 3rem;
-  }
-  .outer-box .question-box {
-    top: 199px;
-    height: auto;
+  .outer-box .question-bg {
     width: 95%;
     left: 2.5%;
   }
-  .outer-box .question-box .question-heading {
-    font-size: 14px;
+  .outer-box .question-bg .single-question-box {
+    width: 95%;
   }
-  .outer-box .question-box .single-question-box {
-    margin: 1rem 1.5rem;
-    padding: 0.8rem 0.2rem;
-  }
-  .outer-box .question-box .single-question-box p {
+  .outer-box .question-bg .single-question-box p {
     font-size: 12px;
   }
-  .outer-box .question-box .single-question-box .question-icon {
-    margin-right: 0.6rem;
-    font-size: 0.5rem;
-    width: 0.8rem;
-    height: 0.8rem;
+  .outer-box .question-bg .question1 {
+    left: 2.5%;
+    top: 5.5rem;
+  }
+  .outer-box .question-bg .question2 {
+    left: 2.5%;
+    top: 9.5rem;
+  }
+  .outer-box .question-bg .question3 {
+    left: 2.5%;
+    top: 13.5rem;
+  }
+  .outer-box .question-bg .question4 {
+    left: 2.5%;
+    top: 17.5rem;
+  }
+  .outer-box .question-bg .question-btn {
+    width: 90%;
+    left: 10%;
+    top: 22rem;
+  }
+  .outer-box .question-bg .question-btn button {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=media.css.map */
