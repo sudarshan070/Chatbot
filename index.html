@@ -10,7 +10,10 @@
   </head>
   <body>
     <section>
-      <div class="outer-box">
+      <div class="outer-box" id="chatBot">
+        <button class="popup-close-btn" onclick="closeBot()">
+          <i class="fas fa-times"></i>
+        </button>
         <!-- hading section -->
         <div class="heading-bg heading-bg-animation">
           <div class="heading-text-box heading-text-box-animation">
@@ -70,6 +73,11 @@
       </div>
     </section>
 
+    <!-- open button -->
+    <button class="popup-open-btn" type="submit" onclick="openBot()">
+      <i class="fas fa-robot"></i>
+      Ask Me
+    </button>
     <!-- refresh button -->
     <form>
       <input
@@ -80,6 +88,19 @@
       />
     </form>
   </body>
+
+  <!-- script -->
+
+  <script>
+    function openBot() {
+      document.getElementById("chatBot").style.display = "block";
+      document.querySelector(".popup-open-btn").style.display = "none";
+    }
+    function closeBot() {
+      document.getElementById("chatBot").style.display = "none";
+      document.querySelector(".popup-open-btn").style.display = "block";
+    }
+  </script>
 
   <!-- font awesome -->
   <script
