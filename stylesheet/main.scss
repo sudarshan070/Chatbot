@@ -210,24 +210,23 @@ body {
 
 // refresh button
 
-.refresh-btn {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  cursor: pointer;
-  z-index: 1;
-  float: right;
-  font-size: 18px;
-  background: #fff;
-  color: red;
-  border: 1px solid tomato;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-}
-.refresh-btn:hover {
-  background: rgba(255, 0, 0, 0.6);
-  color: #fff;
-}
+// .refresh-btn {
+//   position: fixed;
+//   bottom: 1rem;
+//   left: 1rem;
+//   cursor: pointer;
+//   z-index: 1;
+//   font-size: 18px;
+//   background: #fff;
+//   color: red;
+//   border: 1px solid tomato;
+//   padding: 0.6rem 1.2rem;
+//   border-radius: 4px;
+// }
+// .refresh-btn:hover {
+//   background: rgba(255, 0, 0, 0.6);
+//   color: #fff;
+// }
 // popup buttons
 .popup-close-btn {
   background: transparent;
