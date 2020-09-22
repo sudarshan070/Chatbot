@@ -6,78 +6,83 @@
     <title>Chatbot</title>
 
     <!-- Style sheet -->
-    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
   <body>
-    <section>
-      <div class="outer-box" id="chatBot">
-        <button class="popup-close-btn" onclick="closeBot()">
-          <i class="fas fa-times"></i>
-        </button>
-        <!-- hading section -->
-        <div class="heading-bg heading-bg-animation">
-          <div class="heading-text-box heading-text-box-animation">
-            <h1>IRIS</h1>
-            <h2>Hello 👋</h2>
-            <p>I am Iris, a Virtual Assistant</p>
-            <p>How may I help you</p>
-          </div>
-        </div>
-        <!-- bot icon section -->
-        <div class="bot-icon bot-icon-animation">
-          <i class="fas fa-robot"></i>
-        </div>
-        <!-- questions section -->
-        <div class="question-bg question-bg-animation">
-          <div class="question-heading">
-            <p>Frequently Asked Question</p>
-            <div class="question-icon">
-              <i class="fas fa-question"></i>
+    <main class="main-section"> 
+      <section>
+        <div class="outer-box" id="chatBot">
+          <button class="popup-close-btn" onclick="closeBot()">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- hading section -->
+          <div class="heading-bg heading-bg-animation">
+            <div class="heading-text-box heading-text-box-animation">
+              <h1>IRIS</h1>
+              <h2>Hello 👋</h2>
+              <p>I am Iris, a Virtual Assistant</p>
+              <p>How may I help you</p>
             </div>
           </div>
+          <!-- bot icon section -->
+          <div class="bot-icon bot-icon-animation">
+            <i class="fas fa-robot"></i>
+          </div>
+          <!-- questions section -->
+          <div class="question-bg question-bg-animation">
+            <div class="question-heading">
+              <p>Frequently Asked Question</p>
+              <div class="question-icon">
+                <i class="fas fa-question"></i>
+              </div>
+            </div>
 
-          <div class="single-question-box question1 question1-animation">
-            <div class="question-icon">
-              <i class="fas fa-circle"></i>
+            <div class="single-question-box question1 question1-animation">
+              <div class="question-icon">
+                <i class="fas fa-circle"></i>
+              </div>
+              <p>Can I redeem my FB before the original term?</p>
             </div>
-            <p>Can I redeem my FB before the original term?</p>
-          </div>
-          <div class="single-question-box question2 question2-animation">
-            <div class="question-icon">
-              <i class="fas fa-circle"></i>
+            <div class="single-question-box question2 question2-animation">
+              <div class="question-icon">
+                <i class="fas fa-circle"></i>
+              </div>
+              <p>How do I pay my Credit card bill?</p>
             </div>
-            <p>How do I pay my Credit card bill?</p>
-          </div>
-          <div class="single-question-box question3 question3-animation">
-            <div class="question-icon">
-              <i class="fas fa-circle"></i>
+            <div class="single-question-box question3 question3-animation">
+              <div class="question-icon">
+                <i class="fas fa-circle"></i>
+              </div>
+              <p>How can I get my Account Statement?</p>
             </div>
-            <p>How can I get my Account Statement?</p>
-          </div>
-          <div class="single-question-box question4 question4-animation">
-            <div class="question-icon">
-              <i class="fas fa-circle"></i>
+            <div class="single-question-box question4 question4-animation">
+              <div class="question-icon">
+                <i class="fas fa-circle"></i>
+              </div>
+              <p>what is the tenure of fixed Deposit?</p>
             </div>
-            <p>what is the tenure of fixed Deposit?</p>
+            <div class="question-btn btn-animation">
+              <button>
+                <i class="fas fa-comments"></i> Start a New Conversation
+              </button>
+            </div>
           </div>
-          <div class="question-btn btn-animation">
-            <button>
-              <i class="fas fa-comments"></i> Start a New Conversation
-            </button>
+          <!-- bot icon section -->
+          <div class="bot-icon bot-icon-animation1">
+            <i class="fas fa-robot"></i>
           </div>
         </div>
-        <!-- bot icon section -->
-        <div class="bot-icon bot-icon-animation1">
-          <i class="fas fa-robot"></i>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- open button -->
-    <button class="popup-open-btn" type="submit" onclick="openBot()">
-      <i class="fas fa-robot"></i>
-      Ask Me
-    </button>
+      <!-- open button -->
+      <button class="popup-open-btn" type="submit" onclick="openBot()">
+        <i class="fas fa-robot"></i>
+        Ask Me
+      </button>
+    </main>
+    <!-- script -->
+    <script src="./assets/js/index.js"></script>
+
     <!-- refresh button -->
     <!-- <form>
       <input
@@ -88,20 +93,6 @@
       />
     </form> -->
   </body>
-
-  <!-- script -->
-
-  <script>
-    function openBot() {
-      document.getElementById("chatBot").style.display = "block";
-      document.querySelector(".popup-open-btn").style.display = "none";
-    }
-    function closeBot() {
-      document.getElementById("chatBot").style.display = "none";
-      document.querySelector(".popup-open-btn").style.display = "block";
-    }
-  </script>
-
   <!-- font awesome -->
   <script
     src="https://kit.fontawesome.com/a548432773.js"
