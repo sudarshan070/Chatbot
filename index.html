@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
   <body>
-    <main class="main-section"> 
+    <main class="main-section">
       <section>
-        <div class="outer-box" id="chatBot">
+        <div class="outer-box outer-hide" id="chatBot">
           <button class="popup-close-btn" onclick="closeBot()">
             <i class="fas fa-times"></i>
           </button>
@@ -74,6 +74,17 @@
         </div>
       </section>
 
+
+
+       <!-- refresh button -->
+    <form>
+      <input
+        class="refresh-btn"
+        type="button"
+        onClick="history.go(0)"
+        value="Refresh"
+      />
+    </form>
       <!-- open button -->
       <button class="popup-open-btn" type="submit" onclick="openBot()">
         <i class="fas fa-robot"></i>
@@ -83,15 +94,7 @@
     <!-- script -->
     <script src="./assets/js/index.js"></script>
 
-    <!-- refresh button -->
-    <!-- <form>
-      <input
-        class="refresh-btn"
-        type="button"
-        onClick="history.go(0)"
-        value="Refresh"
-      />
-    </form> -->
+   
   </body>
   <!-- font awesome -->
   <script

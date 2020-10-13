@@ -19,10 +19,6 @@ body {
 }
 
 .outer-box {
-  display: none;
-}
-
-.outer-box {
   width: 40%;
   height: 47rem;
   right: 5rem;
@@ -189,6 +185,57 @@ body {
   color: #555555;
 }
 
+.outer-hide {
+  display: none;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.closeBot {
+  -webkit-animation: 2s fadeOut;
+          animation: 2s fadeOut;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    border: 2px solid green;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    border: 2px solid green;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -285,6 +332,13 @@ body {
           animation-fill-mode: backwards;
 }
 
+.openBot {
+  -webkit-animation: moveInBottom 2s linear;
+          animation: moveInBottom 2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .popup-close-btn {
   background: transparent;
   font-size: 1.5rem;
@@ -313,5 +367,24 @@ body {
   border: 2px solid #555;
   -webkit-clip-path: polygon(30% 28%, 81% 29%, 100% 28%, 100% 78%, 100% 99%, 0 100%, 0 79%, 0 27%, 0 0);
           clip-path: polygon(30% 28%, 81% 29%, 100% 28%, 100% 78%, 100% 99%, 0 100%, 0 79%, 0 27%, 0 0);
+}
+
+.refresh-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 18px;
+  background: #fff;
+  color: red;
+  border: 1px solid tomato;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.refresh-btn:hover {
+  background: rgba(255, 0, 0, 0.6);
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
