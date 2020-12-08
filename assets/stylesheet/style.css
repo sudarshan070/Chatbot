@@ -341,8 +341,8 @@ body {
 }
 
 .closeBot {
-  -webkit-animation: 5s fadeOut;
-          animation: 5s fadeOut;
+  -webkit-animation: 2s fadeOut;
+          animation: 2s fadeOut;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -464,8 +464,8 @@ body {
 }
 
 .openBot {
-  -webkit-animation: moveInBottom 5s linear;
-          animation: moveInBottom 5s linear;
+  -webkit-animation: moveInBottom 2s linear;
+          animation: moveInBottom 2s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
